@@ -1,0 +1,227 @@
+body{
+    font: 300 15px 'Roboto', "sans serif";
+    line-height: 1.2;
+    color: #989898;
+
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.clearfix::after{
+    clear: both;
+    content: '';
+    display: table;
+}
+
+H2 {
+font-family: 'Montserrat', sans-serif;
+}
+::before{
+font-family: 'Kaushan Script', cursive;
+}
+
+/* header */
+.main-nav {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+    align-items: center;
+}
+
+.menu-list{
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+}
+
+.menu-items {
+    color:  #94E0D2;
+    list-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    font: 400 15px 'Montserrat', sans-serif;
+
+}
+.menu-items a{
+    text-decoration: none;
+    color: #94E0D2;
+    padding: 10px 0px;
+}
+
+.menu-items:hover  a{
+    color: #F28080;
+    border-bottom: 3px solid #F28080;
+}
+
+.main-nav > a{
+    text-decoration: none;
+    color: #94E0D2;
+    font: 700 30px 'Montserrat', sans-serif;
+}
+
+.main-nav > a span {
+    text-transform: uppercase;
+}
+
+.main-header{
+    margin-bottom: 115px;
+}
+
+
+/* services */
+
+h2 {
+    text-transform: uppercase;
+    font:700 30px 'Montserrat', sans-serif;
+    color: #323232;
+    text-align: center;
+
+}
+
+h2::before{ 
+    display: block;
+    font: 400 24px 'Kaushan Script', 'cursive';
+    text-transform: initial;
+    margin-bottom: 25px;
+    
+}
+
+h2::after{
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color:#F28080;
+    margin: 40px auto;
+
+}
+
+.services h2::before{
+    content:"We Work With";
+}
+
+
+.services-list{
+    margin: 0px auto;
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+}
+
+.services-list h3{
+    text-transform: uppercase;
+    font: 400 14px 'Montserrat', sans-serif;
+    color: #323232;
+    margin-bottom: 20px;
+}
+.services-list h3::before{
+    content: '';
+    display: block;
+    width: 35px;
+    height: 100%;
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    background-repeat: no-repeat;
+}
+.photography::before{
+    background:url(../img/icons/ALARM.png);
+}
+
+.webdesign::before{
+    background: url(../img/icons/LINE-GRAPH.png);
+}
+
+.creativity::before{
+    background: url(../img/icons/COMPUTER.png);
+}
+
+.seo::before{
+    background: url(../img/icons/BOOK.png);
+}
+
+.css::before{
+    background: url(../img/icons/HOME.png);
+}
+
+.digital::before{
+    background: url(../img/icons/IMAGE.png);
+}
+
+.services-items{
+    box-sizing: border-box;
+    padding: 0px 0px 0px 50px;
+    width: 350px;
+    list-style: none;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.services-items:not(:nth-of-type(3n)){
+    margin-right: 60px;
+}
+
+/* team */
+
+.team h2::before{
+    content:"We we are";
+}
+
+.team > p {
+    width: 960px;
+    margin: 0px auto;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 100px;
+    color: #989898;
+
+}
+
+.team-list {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+
+.team-items {
+    list-style: none;
+    min-width: 385px;
+    text-align: center;
+}
+
+
+.team-items p{
+    text-transform: uppercase;
+    color: #323232;
+    margin: 40px 0px 15px 0px;
+}
+
+.team-items span{
+    color: #989898;
+    font-style: italic;
+}
+.team-items:not(:last-of-type){
+    padding-right: 40px;
+    color: #323232;
+
+}
