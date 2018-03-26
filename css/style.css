@@ -207,6 +207,7 @@ h2::after{
     list-style: none;
     min-width: 385px;
     text-align: center;
+    position: relative;
 }
 
 
@@ -225,3 +226,122 @@ h2::after{
     color: #323232;
 
 }
+
+/* mask */
+
+.team-items img {
+    z-index: 102;
+}
+.mask-blue{
+    display: none;
+    position: absolute;
+    top: 0px;
+    width: 385px;
+    height: 468px;
+    background: #95e1d3;
+    
+
+}
+
+.mask{
+    display: none;
+    position: absolute;
+    top: 0px;
+    background: linear-gradient( rgba(243, 130, 129, 0.6), rgba(252, 226, 138, 0.6) );
+    width: 385px;
+    height: 468px;
+    transform: translate(-10px, -10px);
+    justify-content: center;
+    align-items: center;
+}
+
+.team-items:hover > img{
+    transform: translate(-10px, -10px);
+    
+}
+
+.team-items:hover .mask{
+    display: flex;
+}
+
+.team-items:hover .mask-blue {
+    display: block;
+  
+}
+
+.social-list{
+    display: flex;
+    align-items: center;
+
+}
+
+.social-items {
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    background: #FCE38A;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    
+}
+
+.social-items:not(:last-child){
+    border-right: 1px solid #F38181;
+}
+
+.social-items:hover{
+    background:#95E1D3;
+}
+ main {
+     margin-bottom: 100px;
+ }
+
+/* footer */
+.main-footer {
+    width: 1200px;
+    height: 60px;
+    border-top: 1px solid #E5E5E5; 
+    display: flex;
+    margin: 0px auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.main-footer p{
+    font-family: 'Montserrat', sans-serif;
+}
+.main-footer p>span {
+    color: #F28080;
+}
+
+.wrapper-button {
+    display: flex;
+    align-items: center;
+
+
+}
+.mail-text{
+    padding: 0px;
+    margin: 0px;
+    width: 230px;
+    height: 40px;
+    box-sizing: border-box;
+    color: #E5E5E5;
+    font: 300 15px "Roboto", 'sans serif';
+    font-style: italic;
+    border: 1px solid #E5E5E5;
+    
+}
+.mail-button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    width: 150px;
+    background: #95E1D3;
+    color: #fff;
+    text-transform: uppercase;
+}
+
