@@ -64,6 +64,8 @@ font-family: 'Kaushan Script', cursive;
     text-decoration: none;
     color: #94E0D2;
     padding: 10px 0px;
+    transition: color 0.1s linear, border 0.1s linear;
+
 }
 
 .menu-items:hover  a{
@@ -201,6 +203,7 @@ h2::after{
     width: 1200px;
     justify-content: space-between;
     margin: 0px auto;
+    transition: all 2s linear;
 }
 
 .team-items {
@@ -208,6 +211,7 @@ h2::after{
     min-width: 385px;
     text-align: center;
     position: relative;
+    transition: all 2s linear;
 }
 
 
@@ -228,10 +232,6 @@ h2::after{
 }
 
 /* mask */
-
-.team-items img {
-    z-index: 102;
-}
 .mask-blue{
     display: none;
     position: absolute;
@@ -239,7 +239,7 @@ h2::after{
     width: 385px;
     height: 468px;
     background: #95e1d3;
-    
+    transition: all 2s linear;
 
 }
 
@@ -247,7 +247,7 @@ h2::after{
     display: none;
     position: absolute;
     top: 0px;
-    background: linear-gradient( rgba(243, 130, 129, 0.6), rgba(252, 226, 138, 0.6) );
+    background: linear-gradient( rgba(243, 130, 129, 0.9 ), rgba(252, 226, 138, 0.9) );
     width: 385px;
     height: 468px;
     transform: translate(-10px, -10px);
@@ -257,7 +257,7 @@ h2::after{
 
 .team-items:hover > img{
     transform: translate(-10px, -10px);
-    
+    transition: all 0.1s linear;
 }
 
 .team-items:hover .mask{
@@ -272,7 +272,7 @@ h2::after{
 .social-list{
     display: flex;
     align-items: center;
-
+    
 }
 
 .social-items {
@@ -294,6 +294,7 @@ h2::after{
 
 .social-items:hover{
     background:#95E1D3;
+    transition: all 0.2s linear;
 }
  main {
      margin-bottom: 100px;
@@ -344,4 +345,5 @@ h2::after{
     color: #fff;
     text-transform: uppercase;
 }
+
 
