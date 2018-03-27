@@ -322,12 +322,17 @@ h2::after{
     width: 230px;
     height: 40px;
     box-sizing: border-box;
-    color: #E5E5E5;
-    font: 300 15px "Roboto", 'sans serif';
-    font-style: italic;
     border: 1px solid #E5E5E5;
     
 }
+
+.mail-text::placeholder{
+    color: #E5E5E5;
+    font: 300 15px "Roboto", 'sans serif';
+    font-style: italic;
+}
+
+
 .mail-button {
     border: none;
     padding: 0;
