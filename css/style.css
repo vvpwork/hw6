@@ -29,13 +29,6 @@ input[type="radio"].visually-hidden {
     display: table;
 }
 
-H2 {
-font-family: 'Montserrat', sans-serif;
-}
-::before{
-font-family: 'Kaushan Script', cursive;
-}
-
 /* header */
 .main-nav {
     margin: 0 auto;
